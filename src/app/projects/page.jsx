@@ -11,7 +11,7 @@ import wif from '@/images/wif.png'
 import buildnbeyond from '@/images/bnb.png'
 import xeonic from '@/images/xeonic.png'
 import buildpost from '@/images/buildpost.png'
-
+import pro from '@/images/pro.png'
 const projects = [
   {
     "name": "Buildpost",
@@ -41,6 +41,13 @@ const projects = [
     "link": { "href": "https://xeonic.ai", "label": "xeonic.ai" },
     "logo": "logoHelioStream",
     "image": xeonic
+  },
+  {
+    "name": "ProScreenshots",
+    "description": "Enhance Your Screenshots Like Never Before – Trusted by Nearly 2,000 Users",
+    "link": { "href": "https://proscreenshots.com", "label": "proscreenshots.com" },
+    "logo": "logoHelioStream",
+    "image": pro
   },
   
 ]
