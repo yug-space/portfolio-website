@@ -12,11 +12,7 @@ export const metadata = {
   favicon: '/favicon.jpg',
   description:
     'I’m Yug Gupta, a software designer and entrepreneur based in Gwalior City. I’m currently building BuildPost',
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-    },
-  },
+  
 }
 
 export default function RootLayout({ children }) {
