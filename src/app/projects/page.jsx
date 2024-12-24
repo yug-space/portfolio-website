@@ -66,7 +66,7 @@ export default function Projects() {
     <SimpleLayout title="My Projects">
       <ul role="list" className="grid grid-cols-1 gap-x-12 gap-y-16">
         {projects.map((project) => (
-          <Card
+          <div
             as="li"
             key={project.name}
             className="grid md:grid-cols-2 gap-x-12 gap-y-4 flex-row justify-between"
@@ -85,7 +85,7 @@ export default function Projects() {
               </p>
             </div>
             <Image src={project.image} alt="" className='rounded-xl' srcset="" />
-          </Card>
+          </div>
         ))}
       </ul>
     </SimpleLayout>
