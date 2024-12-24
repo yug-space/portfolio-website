@@ -69,7 +69,7 @@ export default function Projects() {
           <Card
             as="li"
             key={project.name}
-            className="grid grid-cols-2 gap-x-12 flex-row justify-between"
+            className="grid md:grid-cols-2 gap-x-12 gap-y-4 flex-row justify-between"
           >
             <div className=''>
               {project.closed ? <div className='bg-red-500 text-white rounded-full px-2 py-1 text-sm inline'>Closed</div> : null}

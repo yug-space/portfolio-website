@@ -266,7 +266,7 @@ export default async function Home() {
             Hi,I&apos;m Yug Gupta - 16 year old founder 
 
           </h1>
-          <p className="mt-6 text-base text-zinc-600 text-3xl dark:text-zinc-400">
+          <p className="mt-6 md:text-3xl text-zinc-600 text-xl dark:text-zinc-400">
           I am passionate about building products that make a difference in people&apos;s lives.
           Space is love.
           </p>

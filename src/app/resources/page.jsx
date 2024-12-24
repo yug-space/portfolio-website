@@ -88,7 +88,7 @@ export default function Projects() {
       <ul role="list" className="mt-[-50px]">
         {books.map((book,index) => (
           <Card as="li" key={index} className="list-bullet">
-            <h2 className="flex items-center text-lg text-zinc-800 before:mr-2 before:content-['•'] dark:text-zinc-100">
+            <h2 className="flex items-center md:text-lg text-sm text-zinc-800 before:mr-2 before:content-['•'] dark:text-zinc-100">
               {book.title} {book.author ? `by ${book.author}` : ''}
             </h2>
           </Card>
@@ -97,7 +97,7 @@ export default function Projects() {
       <h1 className="mt-10 text-4xl">Top Podcasts That Inspired Me</h1>
       <div className="mt-10">
         {podcasts.map((podcast,index) => (
-          <h2 key={index} className="flex items-center text-lg text-zinc-800 before:mr-2 before:content-['•'] mt-2 dark:text-zinc-100">
+          <h2 key={index} className="flex items-center  md:text-lg text-sm text-lg text-zinc-800 before:mr-2 before:content-['•'] mt-2 dark:text-zinc-100">
             {podcast.title}
           </h2>
         ))}
