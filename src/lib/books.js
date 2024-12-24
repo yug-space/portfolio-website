@@ -1,0 +1,24 @@
+export const books = [
+  {
+    title: "The Pragmatic Programmer",
+    author: "David Thomas, Andrew Hunt",
+    slug: "pragmatic-programmer",
+    date: "2023-12-15",
+    description: "A comprehensive guide that offers practical advice and techniques for software development.",
+    rating: 5,
+    genre: "Technology"
+  },
+  {
+    title: "Atomic Habits",
+    author: "James Clear",
+    slug: "atomic-habits",
+    date: "2023-10-01",
+    description: "An easy and proven way to build good habits and break bad ones.",
+    rating: 4,
+    genre: "Self Development"
+  }
+]
+
+export function getAllBooks() {
+  return books.sort((a, b) => new Date(b.date) - new Date(a.date))
+} 
