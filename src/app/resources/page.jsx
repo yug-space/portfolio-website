@@ -86,8 +86,8 @@ export default function Projects() {
   return (
     <SimpleLayout title="Books I've read">
       <ul role="list" className="mt-[-50px]">
-        {books.map((book) => (
-          <Card as="li" key={book.name} className="list-bullet">
+        {books.map((book,index) => (
+          <Card as="li" key={index} className="list-bullet">
             <h2 className="flex items-center text-lg text-zinc-800 before:mr-2 before:content-['•'] dark:text-zinc-100">
               {book.title} {book.author ? `by ${book.author}` : ''}
             </h2>
@@ -96,8 +96,8 @@ export default function Projects() {
       </ul>
       <h1 className="mt-10 text-4xl">Top Podcasts That Inspired Me</h1>
       <div className="mt-10">
-        {podcasts.map((podcast) => (
-          <h2 className="flex items-center text-lg text-zinc-800 before:mr-2 before:content-['•'] mt-2 dark:text-zinc-100">
+        {podcasts.map((podcast,index) => (
+          <h2 key={index} className="flex items-center text-lg text-zinc-800 before:mr-2 before:content-['•'] mt-2 dark:text-zinc-100">
             {podcast.title}
           </h2>
         ))}

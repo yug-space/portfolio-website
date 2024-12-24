@@ -263,7 +263,7 @@ export default async function Home() {
       <Container className="mt-10">
         <div className="max-w-3xl">
           <h1 className="text-4xl  tracking-tight text-zinc-800 sm:text-6xl dark:text-zinc-100">
-            Hi,I'm Yug Gupta - 16 year old founder 
+            Hi,I&apos;m Yug Gupta - 16 year old founder 
 
           </h1>
           <p className="mt-6 text-base text-zinc-600 text-3xl dark:text-zinc-400">
