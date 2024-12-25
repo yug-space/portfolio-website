@@ -9,7 +9,7 @@ export const metadata = {
     default:
       'Yug Gupta - Founder, Software Engineer, and Entrepreneur',
   },
-  favicon: '/favicon.jpg',
+  favicon: './favicon.jpg',
   description:
     'I’m Yug Gupta, a software designer and entrepreneur based in Gwalior City. I’m currently building BuildPost',
   
