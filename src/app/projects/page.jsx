@@ -12,6 +12,7 @@ import buildnbeyond from '@/images/bnb.png'
 import xeonic from '@/images/xeonic.png'
 import buildpost from '@/images/buildpost.png'
 import pro from '@/images/pro.png'
+import Link from 'next/link'
 const projects = [
   {
     "name": "Buildpost",
@@ -30,7 +31,7 @@ const projects = [
   {
     "name": "Whatiffounders",
     "description": "Discover podcasts, products, news, and events for founders.",
-    "link": { "href": "https://whatiffounders.com", "label": "whatiffounders.com" },
+    "link": { "href": "https://x.com/whatiffounder", "label": "whatiffounders.com" },
     "logo": "logoPlanetaria",
     "image": wif,
     "closed": true
@@ -81,15 +82,19 @@ export default function Projects() {
             <div className=''>
               {project.closed ? <div className='bg-red-500 text-white rounded-full px-2 py-1 text-sm inline'>Closed</div> : null}
               <h2 className="mt-6 text-4xl text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Link target='_blank' href={project.link.href}>
+                <p className='text-4xl'>{project.name}</p>
+                </Link>
               </h2>
               <div className='text-xl'>
               <Card.Description className=''>{project.description}</Card.Description>
               </div>
+              <Link href={project.link.href}>
               <p className="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{project.link.label}</span>
               </p>
+              </Link>
             </div>
             <Image src={project.image} alt="" className='rounded-xl' srcset="" />
           </div>
